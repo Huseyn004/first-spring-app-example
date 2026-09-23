@@ -16,11 +16,11 @@ public class FirstSpringAppExampleApplication implements CommandLineRunner {
     // Dependency injected by Spring
     private final ItemService itemService;
 
+
     // Constructor Injection — Spring sees ItemService parameter and automatically passes the bean
     public FirstSpringAppExampleApplication(ItemService itemService) {
         this.itemService = itemService;
     }
-
     public static void main(String[] args) {
         SpringApplication.run(FirstSpringAppExampleApplication.class, args);
     }
